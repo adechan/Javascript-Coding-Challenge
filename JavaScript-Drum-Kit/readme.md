@@ -17,3 +17,6 @@ Things that I have learned doing this challenge:
 using *event.type*
 - `event.currentTarget.dataset.key` (for *click* events): dataset reads the data-xx attribute in a give DOM element
 - `event.keyCode` (for *keydown* events)
+
+### You can test it out here
+https://adechan.github.io/Javascript-Coding-Challenge/JavaScript-Drum-Kit/
