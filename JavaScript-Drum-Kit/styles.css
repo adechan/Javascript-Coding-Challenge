@@ -48,6 +48,8 @@ body {
     background: rgba(0, 0, 0, 0.4);
 
     transition: all 0.07s;
+
+    cursor: pointer;
 }
 
 kbd {
