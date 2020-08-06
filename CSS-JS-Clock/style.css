@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.clock {
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+    height: 45vh;
+    width: 45vh;
+
+    border-radius: 50%;
+    border: 15px solid white;
+
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px white, /* outside shadow */
+      inset 0 0 0 3px #EFEFEF, /* inside shadow */
+      inset 0 0 10px black, /* inside shadow */
+      0 0 10px blue; /* outside shadow */
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    
+    position: absolute;
+    /* so hands start in the middle of the circle */
+    top: 50%;
+
+    /* default is 50%, but we want to move it along the X axis*/
+    transform-origin: 100%;
+
+    /* so the hands point to 12 default */
+    transform: rotate(90deg);
+
+    /* for real clock movement */
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+
+    transition: all 0.05s ;
+}
+
+/* So the hour hand is smaller than others and starts in the middle */
+.hand.hour-hand {
+    position: absolute;
+    left: 15%;
+    width: 35%;
+}
+
+.hand.second-hand {
+    height: 3px;
+}
