@@ -52,6 +52,10 @@ body {
     cursor: pointer;
 }
 
+.keys .key:first-child {
+    margin-left: 20px;
+}
+
 kbd {
     font-size: 30px;
     color: white;
@@ -69,4 +73,15 @@ span {
     transform: scale(1.1);
     border-color: #ffc600;
     box-shadow: 0 0 1rem #ffc600;
+  }
+
+  @media(max-width: 760px) {
+    .keys {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        /* the property to use to distribute flex lines (rows / columns) along the cross axis is align-content */
+        align-content: center;
+    }
   }
