@@ -10,3 +10,6 @@ Things that I have learned doing this challenge:
 ### about time
 ```setInterval(setDate, 1000);```
 - *setInterval* runs the function passed *setDate* every 1000 milliseconds 
+
+### You can test it out here 
+https://adechan.github.io/Javascript-Coding-Challenge/CSS-JS-Clock/
