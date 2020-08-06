@@ -75,13 +75,13 @@ span {
     box-shadow: 0 0 1rem #ffc600;
   }
 
-  @media(max-width: 760px) {
-    .keys {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+@media(max-width: 760px) {
+.keys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-        /* the property to use to distribute flex lines (rows / columns) along the cross axis is align-content */
-        align-content: center;
-    }
-  }
+    /* the property to use to distribute flex lines (rows / columns) along the cross axis is align-content */
+    align-content: center;
+}
+}
